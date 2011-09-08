@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831084229) do
+ActiveRecord::Schema.define(:version => 20110908092942) do
+
+  create_table "addresses", :force => true do |t|
+    t.string   "name"
+    t.string   "firstname"
+    t.string   "street1"
+    t.string   "street2"
+    t.string   "postalcode"
+    t.string   "city"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "company_id"
+  end
+
+  create_table "companies", :force => true do |t|
+    t.string   "name"
+    t.string   "vatregno"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -21,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110831084229) do
     t.string   "auth_token"
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
+    t.integer  "company_id"
   end
 
 end

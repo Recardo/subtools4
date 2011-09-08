@@ -6,7 +6,9 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'pg'
+gem 'pg'      
+
+gem 'heroku'
 
 gem "netzke-core"     
 gem 'netzke-basepack'

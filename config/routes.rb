@@ -1,4 +1,8 @@
 Peboa1::Application.routes.draw do          
+  get "addresses/index"
+
+  get "companies/index"
+
   netzke 
   
   #get "users/show"    
@@ -67,7 +71,9 @@ Peboa1::Application.routes.draw do
   namespace :admin do  
     root :to => "home#index"     
     resources :home
-    resources :users               
+    resources :users   
+    resources :companies
+    resources :addresses            
   end
 
   # You can have the root of your site routed with "root"

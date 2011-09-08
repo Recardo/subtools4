@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Peboa1</title>
+  <%= netzke_init %> 
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>  
-  <%= netzke_init %>
+  
   <%= csrf_meta_tags %>   
 </head>
    
@@ -16,7 +17,7 @@
         	<div style="float: left; width: 175px;">
             		<%= link_to image_tag("peboaLG_white.gif", :width => '175px'), root_path, :class => 'logo' %>
             </div>
-            <div id="user_nav" style="float: right; width: 805px; text-align: right;">
+            <div id="user_nav" style="float: right; text-align: right;">
                 <% if current_user %>
                 Angemeldet als <%= current_user.email %>. <%= link_to "Abmelden", logout_path %>
                 <% else %>       
@@ -26,7 +27,19 @@
             
         </div>
         <%#= render :partial => "layouts/adminmenu" %>
-        <%#= render :partial => "layouts/leftcolumn" %>
+        <%#= render :partial => "layouts/leftcolumn" %>   
+		<% if current_user %>
+			<div id="leftcolumn" class="ui-widget-content ui-menu">
+		        <ul>
+		            <li class="ui-menu-item">
+		                <%= link_to "Benutzerdaten", :controller => "users", :action => "index" %>
+		            </li> 
+					<li>
+						test
+					</li>
+				</ul>
+			</div>
+		<% end %>
         <div id="content" class="ui-widget-content">
             <% flash.each do |name, msg| %>  
 				<%= content_tag :div, msg, :id => "flash#{name}" %>  

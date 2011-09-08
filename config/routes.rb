@@ -3,7 +3,8 @@ Peboa1::Application.routes.draw do
   
   #get "users/show"    
   #match "users/show" 
-
+                        
+  
   get "home/index"
 
   get "password_resets/new"
@@ -61,7 +62,13 @@ Peboa1::Application.routes.draw do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
-  #   end
+  #   end   
+  
+  namespace :admin do  
+    root :to => "home#index"     
+    resources :home
+    resources :users               
+  end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.

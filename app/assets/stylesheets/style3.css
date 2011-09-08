@@ -18,7 +18,8 @@ a:hover { color: #000000; background-color:#008080; }
  background-color: #0073CF;
  -moz-border-radius: 24px; 
  -webkit-border-radius: 24px; 
- border-radius: 24px;
+ border-radius: 24px;    
+font-size: 1.0em;
 }
 
 
@@ -27,7 +28,7 @@ a:hover { color: #000000; background-color:#008080; }
  /*color: #008080;*/
  /*background: #FFFFFF;*/
  min-height: 450px;
- width: 810px;
+ width: 760px;
  display: inline;
  border-left-width: 1px;
  /*border-left-color: #ff5600;*/
@@ -37,7 +38,7 @@ a:hover { color: #000000; background-color:#008080; }
 
 #header {
  color: white;
- width: 980px;
+ width: 930px;
  float: left;
  height: 75px;
  background: #0073cf;
@@ -50,7 +51,7 @@ a:hover { color: #000000; background-color:#008080; }
 */
 
 #footer { 
- width: 980px;
+ width: 930px;
  height: 25px;
  clear: both;
  color: white;
@@ -60,7 +61,7 @@ a:hover { color: #000000; background-color:#008080; }
 
 #navigation {
  float: left;
- width: 980px;
+ width: 930px;
  height: 25px;
  /*color: black;*/
  /*background: white;*/

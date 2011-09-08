@@ -1,0 +1,10 @@
+
+<%= netzke :users, 
+	:class_name => 'Netzke::Basepack::GridPanel', 
+	:model => 'User',
+	:columns => [:id,
+		:email,
+		:company__name
+	]
+	
+	%>

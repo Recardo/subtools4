@@ -1,0 +1,14 @@
+
+<%= netzke :addresses, 
+	:class_name => 'Netzke::Basepack::GridPanel', 
+	:model => 'Address',
+	:columns => [
+		:id, # id should always be included and is by default hidden
+		:name,   
+		:firstname,
+		:street1,
+		:street2,
+		:postalcode,
+		:city,
+	    :company__name
+	    ] %>

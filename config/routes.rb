@@ -86,7 +86,8 @@ Peboa1::Application.routes.draw do
     #resources :agentdetails
     resources :profils
     resources :categories
-    #get "admin/agents/:id/show"       
+    #get "admin/agents/:id/show" 
+    match "admin/agents/:id" => "agents#show"       
   end
 
   # You can have the root of your site routed with "root"

@@ -1,0 +1,318 @@
+# German translations for Ruby on Rails
+# by Clemens Kofler (clemens@railway.at)
+# contributors:
+#  - Alexander Dreher - http://github.com/alexdreher - Rails 3 update
+
+de:
+  netzke:
+      basepack:
+        grid_panel:
+          actions: 
+            add: Neu
+            edit: Ändern
+            delete: Löschen
+            apply: Speichern
+            add_in_form: Neu im Formular
+            edit_in_form: Ändern im Formular
+            search: Suche
+            
+          deleted_n_records: "%n Datensätze gelöscht"
+          cannot_delete: "Du hast keine Berechtigung die Daten zu löschen"
+          confirmation: Bestätigung
+          are_you_sure: Bist du sicher?
+
+          record_form_window: 
+            actions:
+              ok: OK
+              cancel: Abbrechen
+
+        search_window:
+          title: erweiterte Suche
+          actions:
+            search: Suche
+            cancel: Abbrechen
+
+        form_panel:
+          actions:
+            edit: Bearbeiten
+            edit_tooltip: Bearbeiten
+            cancel: Abbrechen
+            cancel_tooltip: Bearbeiten abbrechen
+            apply: Anwenden
+            apply_tooltip: Änderungen speichern
+
+        search_panel:
+          presets: Vorlagen
+          equals: entspricht
+          greater_than: größer als
+          less_than: kleiner als
+          contains: enthält
+          matches: ist gleich
+          date_equals: "On"
+          before: vorher
+          after: nachher
+
+        paging_form_panel:
+          actions:
+            search: Suche
+            search_tooltip: Erweiterte Suche
+
+        query_builder:
+          presets: Vorlagen
+          preset_saved: Vorlage erfolgreich gespeichert
+          preset_deleted: Vorlage erfolgreich geglöscht
+          overwrite_confirm: "Soll das Vorlage wirklich überschrieben werden '{0}'?"
+          overwrite_confirm_title: "Überschreibe Vorlage"
+          delete_confirm: "Soll die Vorlage wirklich gelöscht werden '{0}'?"
+          delete_confirm_title: "Lösche Vorlage"
+          actions:
+            clear_all: leeren
+            clear_all_tooltip: Leere alle Bedingungen
+            reset: Reset
+            reset_tooltip: Setze alle Bedingungs-Werte zurück
+            save_preset: Speicher Vorlage
+            save_preset_tooltip: Speichere Vorlage
+            delete_preset: Lösche Vorlage
+            delete_preset_tooltip: Lösche Vorlage
+            apply: Anwenden
+            apply_tooltip: Wende neue Bedinungen an
+
+
+      formats:
+        date: Y-m-d
+        datetime: Y-m-d H:i:s
+        time: H:i:s      
+        
+        
+        
+        
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%e. %b"
+      long: "%e. %B %Y"
+      only_day: "%e"
+
+    day_names:
+      - Sonntag
+      - Montag
+      - Dienstag
+      - Mittwoch
+      - Donnerstag
+      - Freitag
+      - Samstag
+    abbr_day_names:
+      - So
+      - Mo
+      - Di
+      - Mi
+      - Do
+      - Fr
+      - Sa
+    month_names:
+      - ~
+      - Januar
+      - Februar
+      - März
+      - April
+      - Mai
+      - Juni
+      - Juli
+      - August
+      - September
+      - Oktober
+      - November
+      - Dezember
+    abbr_month_names:
+      - ~
+      - Jan
+      - Feb
+      - Mär
+      - Apr
+      - Mai
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Okt
+      - Nov
+      - Dez
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%A, %d. %B %Y, %H:%M Uhr"
+      short: "%d. %B, %H:%M Uhr"
+      long: "%A, %d. %B %Y, %H:%M Uhr"
+      time: "%H:%M"
+
+    am: "vormittags"
+    pm: "nachmittags"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: 'eine halbe Minute'
+      less_than_x_seconds:
+        one: 'weniger als eine Sekunde'
+        other: 'weniger als %{count} Sekunden'
+      x_seconds:
+        one: 'eine Sekunde'
+        other: '%{count} Sekunden'
+      less_than_x_minutes:
+        one: 'weniger als eine Minute'
+        other: 'weniger als %{count} Minuten'
+      x_minutes:
+        one: 'eine Minute'
+        other: '%{count} Minuten'
+      about_x_hours:
+        one: 'etwa eine Stunde'
+        other: 'etwa %{count} Stunden'
+      x_days:
+        one: 'ein Tag'
+        other: '%{count} Tage'
+      about_x_months:
+        one: 'etwa ein Monat'
+        other: 'etwa %{count} Monate'
+      x_months:
+        one: 'ein Monat'
+        other: '%{count} Monate'
+      almost_x_years:
+        one: 'fast ein Jahr'
+        other: 'fast %{count} Jahre'
+      about_x_years:
+        one: 'etwa ein Jahr'
+        other: 'etwa %{count} Jahre'
+      over_x_years:
+        one: 'mehr als ein Jahr'
+        other: 'mehr als %{count} Jahre'
+    prompts:
+      second: "Sekunden"
+      minute: "Minuten"
+      hour: "Stunden"
+      day: "Tag"
+      month: "Monat"
+      year: "Jahr"
+
+  number:
+    format:
+      precision: 2
+      separator: ','
+      delimiter: '.'
+      significant: false
+      strip_insignificant_zeros: false
+    currency:
+      format:
+        unit: '€'
+        format: '%n %u'
+        separator: ","
+        delimiter: "."
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+    percentage:
+      format:
+        delimiter: ""
+    precision:
+      format:
+        delimiter: ""
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Tausend
+          million: Millionen
+          billion:
+            one: Milliarde
+            others: Milliarden
+          trillion: Billionen
+          quadrillion:
+            one: Billiarde
+            others: Billiarden
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " und "
+      last_word_connector: " und "
+    select:
+      prompt: "Bitte wählen:"
+
+  activemodel:
+    errors:
+      template:
+        header:
+          one:    "Konnte %{model} nicht speichern: ein Fehler."
+          other:  "Konnte %{model} nicht speichern: %{count} Fehler."
+        body: "Bitte überprüfen Sie die folgenden Felder:"
+  helpers:
+    select:
+      prompt: "Bitte wählen"
+
+    submit:
+      create: '%{model} erstellen'
+      update: '%{model} aktualisieren'
+      submit: '%{model} speichern'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "ist kein gültiger Wert"
+      exclusion: "ist nicht verfügbar"
+      invalid: "ist nicht gültig"
+      confirmation: "stimmt nicht mit der Bestätigung überein"
+      accepted: "muss akzeptiert werden"
+      empty: "muss ausgefüllt werden"
+      blank: "muss ausgefüllt werden"
+      too_long: "ist zu lang (nicht mehr als %{count} Zeichen)"
+      too_short: "ist zu kurz (nicht weniger als %{count} Zeichen)"
+      wrong_length: "hat die falsche Länge (muss genau %{count} Zeichen haben)"
+      not_a_number: "ist keine Zahl"
+      greater_than: "muss größer als %{count} sein"
+      greater_than_or_equal_to: "muss größer oder gleich %{count} sein"
+      equal_to: "muss genau %{count} sein"
+      less_than: "muss kleiner als %{count} sein"
+      less_than_or_equal_to: "muss kleiner oder gleich %{count} sein"
+      odd: "muss ungerade sein"
+      even: "muss gerade sein"
+      not_an_integer: "muss ganzzahlig sein"
+      not_saved: 
+        one:    "Speichern nicht möglich: ein Fehler."
+        other:  "Speichern nicht möglich: %{count} Fehler."
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "Konnte %{model} nicht speichern: ein Fehler."
+          other:  "Konnte %{model} nicht speichern: %{count} Fehler."
+        body: "Bitte überprüfen Sie die folgenden Felder:"
+
+      messages:
+        taken: "ist bereits vergeben"
+        record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"

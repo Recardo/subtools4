@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  active: false
+  wage: 9.99
+
+two:
+  name: MyString
+  active: false
+  wage: 9.99

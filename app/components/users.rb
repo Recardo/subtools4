@@ -6,7 +6,7 @@ class Users < Netzke::Basepack::GridPanel
               :columns => [
                 :id,
               	:email,
-              	:company__name,       
+              	{:name => :company, :editable => false, :getter => lambda { |r| "<a href='companies/#{r.company.id if r.company}'>#{r.company.name if r.company}</a>" }},       
               	{:name => :details, :editable => false, :getter => lambda { |r| "<a href='users/#{r.id}'>Details</a>" }}
                ]
              }

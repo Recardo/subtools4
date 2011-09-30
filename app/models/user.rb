@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base    
   belongs_to :company
+  has_many :requests
   
   attr_accessible :email, :password, :password_confirmation  
   has_secure_password

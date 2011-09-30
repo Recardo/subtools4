@@ -1,0 +1,6 @@
+<%= netzke :User, 
+  :class_name => "Basepack::FormPanel", 
+  :model => "User",
+  :items => [:email,:vatregno, :company__name],
+  :record_id => @id,
+  :title => "Adresse bearbeiten"%>

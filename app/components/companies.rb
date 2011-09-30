@@ -7,7 +7,7 @@ class Companies < Netzke::Basepack::GridPanel
                 :id,
             		:name,
             		:vatregno,
-            		{ :name => :details, :editable => false, :getter => lambda { |r| "<a href='companies/#{r.id}/'>Details</a>" }}
+            		{ :name => :details, :editable => false, :width => 50, :getter => lambda { |r| "<a href='companies/#{r.id}/'>Details</a>" }}
                ]
              }
           ) 

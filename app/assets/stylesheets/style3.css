@@ -72,6 +72,7 @@ font-size: 1.0em;
  /*background: #FFFFFF;*/
  width: 140px;
  float: left;
+	padding-left: 30px;
 }
 
 #leftcolumn ul 

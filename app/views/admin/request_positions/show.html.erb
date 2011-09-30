@@ -1,0 +1,13 @@
+<%= netzke :request_position, 
+  :class_name => "Basepack::FormPanel", 
+  :model => "RequestPosition",
+  :items => [
+	:status,
+	:profil__name, 
+	:cost,
+	:amount, 
+	:description, 
+	:request__id
+	],
+  :record_id => @id,
+  :title => "Anfrage-Position bearbeiten"%>

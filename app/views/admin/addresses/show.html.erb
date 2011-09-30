@@ -1,0 +1,12 @@
+<%= netzke :Address, 
+  :class_name => "Basepack::FormPanel", 
+  :model => "Address",
+  :items => [	:name,   
+	:firstname,
+	:street1,
+	:street2,
+	:postalcode,
+	:city,
+	:company__name],
+  :record_id => @id,
+  :title => "Adresse bearbeiten"%>

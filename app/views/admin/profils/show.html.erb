@@ -1,0 +1,6 @@
+<%= netzke :Profil, 
+  :class_name => "Basepack::FormPanel", 
+  :model => "Profil",
+  :items => [:name, :active, :wage, :category__name, :agent__name, :agent__company__name],
+  :record_id => @id,
+  :title => "Profil bearbeiten"%>

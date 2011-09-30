@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  status: 1
+  profil_id: 
+  wage: 9.99
+
+two:
+  status: 1
+  profil_id: 
+  wage: 9.99

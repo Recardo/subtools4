@@ -1,7 +1,7 @@
 class Admin::AddressesController < ApplicationController
-    
-def update
-   puts "bla bla bla"
-end
+
+def show
+       @id = params[:id] 
+ end
 
 end

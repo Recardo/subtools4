@@ -8,7 +8,9 @@ class Admin::AgentsController < ApplicationController
   end         
   
   def show
-         @id = params[:id] 
+         @id = params[:id]
+         #puts "Controller " + @id 
+         #Netzke::Session::component_session[:id] = params[:id]
    end
   
 

@@ -1,4 +1,12 @@
 Peboa1::Application.routes.draw do          
+  get "request_position/index"
+
+  get "request_position/show"
+
+  get "request/index"
+
+  get "request/show"
+
   get "categories/index"
 
   get "profils/index"
@@ -86,8 +94,12 @@ Peboa1::Application.routes.draw do
     #resources :agentdetails
     resources :profils
     resources :categories
+    resources :requests
+    resources :request_positions
     #get "admin/agents/:id/show" 
-    match "admin/agents/:id" => "agents#show"       
+    match "admin/agents/:id" => "agents#show"
+    match "admin/requests/:id" => "requests#show"
+    #match "admin/request_positions/:id" => "request_positions#show"         
   end
 
   # You can have the root of your site routed with "root"

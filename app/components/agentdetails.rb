@@ -1,21 +1,38 @@
-class Agentdetails < Netzke::Basepack::FormPanel
+class Agentdetails < Netzke::Basepack::Panel
 
   def configuration
-    puts "test"
-    puts params
-    
+      @agent_id = super[:record_id]
       super.merge(
-            { :model => "Agent",
-              :record_id => 2  
-              #:columns => [
-              #  :id,
-          		#  :name,
-          		#  #:company__name,
-          		#  { :name => :company, :editable => false, :getter => lambda { |r| "<a href='companies/#{r.company.id if r.company}'>#{r.company.name if r.company}</a>" }}, 
-          		#  { :name => :details, :editable => false, :getter => lambda { |r| "<a href='agents/#{r.id}'>Details</a>" }}
-              # ]
-             }
-          ) 
+        :items => [main_panel, details_panel],
+        :border => true,
+        :active_tab => 0
+      )
+      
+    end
+
+    def details_panel
+      {
+        :item_id => 'details_panel',
+        :region => :south,
+        #:width => 200,
+        :class_name => "Basepack::Profils",
+        :title => "Profile",
+        :scope => lambda {|r| r.where(:agent_id => @agent_id) }
+      }
     end 
+    
+    def main_panel
+      {
+        #:item_id => 'main',
+        :region => :center,
+        #:width => 200
+         
+          :class_name => "Basepack::FormPanel", 
+          :model => "Agent",
+          :items => [:name,:company__name],
+          :record_id => @agent_id,
+          :title => "Agent bearbeiten" 
+      }
+    end
     
 end
